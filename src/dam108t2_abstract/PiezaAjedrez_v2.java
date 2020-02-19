@@ -1,6 +1,6 @@
 package dam108t2_abstract;
 
-public abstract class PiezaAjedrez {
+public abstract class PiezaAjedrez_v2 {
     public char simbolo;
     public int fila;
     public int columna;
@@ -8,7 +8,7 @@ public abstract class PiezaAjedrez {
     public final int MAX_F_C = 7;
     public abstract boolean mover(int f, int c);
     
-    PiezaAjedrez(){
+    PiezaAjedrez_v2(){
         this.simbolo = 'P';
         this.fila = 0;
         this.columna = 0;
@@ -19,6 +19,15 @@ public abstract class PiezaAjedrez {
             return true;
         }
         return false;
+    }
+    
+    public static int TranCol(char col){
+        String letras = "abcdefgh";
+        int pos = letras.indexOf(col);
+        return pos;
+    }
+    public static int TranFil(int fil){
+        return fil - 1;
     }
     
 } // fin PiedraAjedrez
