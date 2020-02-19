@@ -1,0 +1,10 @@
+Cuestión 1: ¿Al añadir el nuevo método a la interfaz, si no modificamos las clases que la implementan
+¿se produce algún error? ¿Por qué? ¿Cómo evitamos esta situación?
+
+- Nos indica que el nuevo metodo declarado en la interfaz no esta implementado en los hijos, esto pasa por que los metodos nuevos implementados tienen la obligacion de ser definidos por los hijos, evitamos esto definiendo los metodos en los hijos o usando la notacion default para implementar un metodo por defecto en los hijos pero con el código escrito en la clase padre.
+
+Cuestión 2: Supón que añades a la interfaz un nuevo método llamado ocupaMasque va a ser igual
+para todas las clases que implementen la interfaz ya que es una comparación del volumen, tenga la
+forma que tenga ¿qué opciones tenemos para no tener que implementarlo en todas las clases?
+
+podemos implementarlo con la notación default y escribir el codigo dentro del metodo en la clase padre.
