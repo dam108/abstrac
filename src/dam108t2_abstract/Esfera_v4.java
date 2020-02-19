@@ -1,11 +1,12 @@
 package dam108t2_abstract;
 
-public class Esfera_v1 extends Figura3D_v1{
+public class Esfera_v4 implements Figura3D_v4{
     public double radio;
+    public String nombre;
     
     /* CONSTRUCTOR */
-    Esfera_v1(double rad){
-        super("Esfera");
+    Esfera_v4(double rad){
+        nombre = "Esfera";
         this.radio = rad;
     }
     
@@ -17,4 +18,11 @@ public class Esfera_v1 extends Figura3D_v1{
         vol = radioCubo * Math.PI * (1.33333333);
         return vol;
     }
+    @Override
+    public double superficie(){
+        double sup;
+        sup = 4 * Math.PI * (radio*radio);
+        return sup;
+    }
+    
 }
