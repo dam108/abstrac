@@ -1,0 +1,1 @@
+La clase triAtleta_v2 se nos marca como que tiene algun error por que al tener implementada una interfaz padre (Saltador_v2) tiene la obligacion de declarar los métodos que se indican en la interfaz y como no los tiene declarado da error. para esto creamos un metodo abstracto default en la interfaz padre y asi ya no da error.
