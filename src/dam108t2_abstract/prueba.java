@@ -6,7 +6,7 @@ public class prueba {
         n = (int) Math.random()* 1;
         for (int i = 0; i < 1000; i++) {
             n = (int) (Math.random()* 2);
-            
+
             System.out.println(n);
         }
         /*
@@ -16,5 +16,4 @@ public class prueba {
             if (vel >68) System.out.println(vel);
         }*/
     }
-    
 }
