@@ -19,17 +19,7 @@ public class Lowcost extends Habitacion {
         this.lowcost = true;
     }
     
-    
-    @Override
-    public boolean chekIn(){
-        if(ocupada)return false;
-        else {
-            this.setOcupada(true);
-            this.fechaDeIngreso = LocalDateTime.now().toLocalTime();
-            return true;
-        }
-    }
-    
+      
     public double calcularprecio(){
         LocalTime fechaSalida = LocalDateTime.now().toLocalTime();
         long dias = Math.abs(SECONDS.between(this.fechaDeIngreso, fechaSalida));

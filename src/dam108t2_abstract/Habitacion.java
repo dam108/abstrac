@@ -17,4 +17,13 @@ abstract class Habitacion implements Hab_Hotel {
         this.ocupada = a;
     }
     
+    public boolean chekIn(){
+        if(ocupada)return false;
+        else {
+            this.setOcupada(true);
+            this.fechaDeIngreso = LocalDateTime.now().toLocalTime();
+            return true;
+        }
+    }
+    
 }

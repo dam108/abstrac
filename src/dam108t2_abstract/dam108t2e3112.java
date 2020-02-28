@@ -80,6 +80,7 @@ public class dam108t2e3112 {
                                         check = arrHotel.habitaciones.get(i).chekIn();
                                         if(check){
                                             ((Suite)arrHotel.habitaciones.get(i)).huespedes = h;
+                                            ((Suite)arrHotel.habitaciones.get(i)).actualizarCoste();
                                             System.out.println("Se ha asignado la habitacion numero "+(i+1)+" de tipo Suite");
                                             bandera = true;
                                             break;
